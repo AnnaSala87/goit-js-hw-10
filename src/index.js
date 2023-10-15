@@ -57,20 +57,16 @@ function onInputChange() {
       .then(countries => {
         console.log(countries.length);
         if (countries.length == 1) {
-          console.log('Pojedynczy wynik');
           viewCountryCardMarker(countries[0]);
         } else if (countries.length < 10 && countries.length > 1) {
-          console.log('Wiele wyników');
           viewCountryList(countries);
         } else {
-          clearAll();
           Notiflix.Notify.info(
             'Too many matches found. Please enter a more specific name.'
           );
         }
       })
       .catch(errorText => {
-        clearAll();
         Notiflix.Notify.failure('Oops, there is no country with that name.');
       });
 }
