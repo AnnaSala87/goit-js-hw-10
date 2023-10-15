@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c04621;
+  color: #000000;
+  line-height: 2;
+}
+
+#search-box {
+  font: inherit;
+  padding: 5px;
+  max-width: 300px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  border: 5px solid rgb(139, 43, 32);
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+li:not(:last-child) {
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 5px solid rgb(139, 43, 32);
+}
+.CountryCardMarker {
+  display: inline-block;
+  padding: 20px;
+  border: 5px solid rgb(139, 43, 32);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.12), 0px 10px 10px rgba(0, 0, 0, 0.06),
+    5px 10px 10px rgba(0, 0, 0, 0.16);
+  background-color: rgb(255, 255, 255);
+}
+.CountryCardHeader {
+  display: flex;
+  align-items: center;
+}
+.CountryCardName {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.CountryCardAttribute {
+  font-weight: bold;
+}
+.CountryListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.CountryListName {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.CountryCardAttributeValue {
+  font-weight: normal;
+  font-size: 20px;
+}
